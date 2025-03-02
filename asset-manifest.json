@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/audio-frontend/static/css/main.db550515.css",
+    "main.js": "/audio-frontend/static/js/main.dd616c88.js",
+    "index.html": "/audio-frontend/index.html",
+    "main.db550515.css.map": "/audio-frontend/static/css/main.db550515.css.map",
+    "main.dd616c88.js.map": "/audio-frontend/static/js/main.dd616c88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db550515.css",
+    "static/js/main.dd616c88.js"
+  ]
+}
