@@ -83,8 +83,9 @@ function App() {
         });
 
         // Connect to the backend WebSocket signaling server.
-        const ws = new WebSocket("ws://localhost:8000/ws");
-        wsRef.current = ws;
+        const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+        const wsUrl = backendUrl.replace(/^http/, 'ws') + '/ws';
+        const ws = new WebSocket(wsUrl);        wsRef.current = ws;
 
         ws.onopen = () => {
           appendLog("WebSocket connected.");
